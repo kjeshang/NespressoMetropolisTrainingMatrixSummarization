@@ -1,0 +1,11 @@
+References
+
+https://www.geeksforgeeks.org/extract-text-from-pdf-file-using-python/
+
+https://medium.com/analytics-vidhya/text-summarization-in-python-using-extractive-method-including-end-to-end-implementation-2688b3fd1c8c
+
+https://medium.com/@sarowar.saurav10/6-useful-text-summarization-algorithm-in-python-dfc8a9d33074#:~:text=Abstractive%20text%20summarization%20creates%20readable,summarized%20using%20natural%20language%20processing.
+
+https://miso-belica.github.io/sumy/summarizators.html
+
+https://github.com/Jcharis/Natural-Language-Processing-Tutorials/blob/master/Text%20Summarization%20with%20Sumy%20Python%20.ipynb
