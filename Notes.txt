@@ -9,3 +9,6 @@ https://medium.com/@sarowar.saurav10/6-useful-text-summarization-algorithm-in-py
 https://miso-belica.github.io/sumy/summarizators.html
 
 https://github.com/Jcharis/Natural-Language-Processing-Tutorials/blob/master/Text%20Summarization%20with%20Sumy%20Python%20.ipynb
+
+https://fabianofalcao.medium.com/metrics-for-evaluating-summarization-of-texts-performed-by-transformers-how-to-evaluate-the-b3ce68a309c3
+
