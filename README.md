@@ -6,7 +6,19 @@
 
 ## Data Extraction
 
+The first step of this project involves reading in the file path of the reference text and required Python libraries. The textual content of each section (i.e., start page to end page of given section) in the reference text page-by-page. The extracted text is saved in a Pandas dataframe and exported into an Excel workbook, which will serve as a raw dataset for future stage/s of the project.
+
+Below is a tabular breakdown of the raw dataset.
+|Column|Data Type|Description|
+|--|--|--|
+|Section|Object|Section in reference text (i.e., Employee Memo)|
+|Start Page|Integer|First page of respective section|
+|End Page|Integer|Last page of respective section|
+|Extracted Text|Object|Textual content retrieved from the section (i.e., from given start page to end page)|
+
 ## Text Summarization
+
+
 
 ## Evaluation
 
@@ -37,4 +49,4 @@ In constructing the final summaries, I at times mixed and matched portions from 
 * Objective &ndash; This is a summary that is very short in length, and is included in the event that a longer summary that is selected is sufficient in terms of detail and length.
 * Images &ndash; This is due to some textual content in the reference text being in an image format. Thus, the textual content was not retrieved during the "Data Extraction" phase of the project.
 
-A common aspect of constructing the final summary documents was to manually edit the generated summaries as not all of the text is accurate in terms of readability, conciseness, and grammar. There are some instances where sentences are cutoff and the gaps must be filled.
+A common aspect of constructing the final summary documents was to manually edit the generated summaries as not all of the text is accurate in terms of readability, conciseness, and grammar. There are some instances where sentences are cutoff and the gaps must be filled. The summaries were edited within markdown files using Microsoft Visual Studio Code, and then exported to PDF documents once editing was completed.
