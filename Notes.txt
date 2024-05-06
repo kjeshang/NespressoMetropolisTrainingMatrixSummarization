@@ -12,3 +12,6 @@ https://github.com/Jcharis/Natural-Language-Processing-Tutorials/blob/master/Tex
 
 https://fabianofalcao.medium.com/metrics-for-evaluating-summarization-of-texts-performed-by-transformers-how-to-evaluate-the-b3ce68a309c3
 
+https://haticeozbolat17.medium.com/bertscore-and-rouge-two-metrics-for-evaluating-text-summarization-systems-6337b1d98917
+
+https://arize.com/glossary/meteor-score/
