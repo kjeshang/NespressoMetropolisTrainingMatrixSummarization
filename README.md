@@ -26,13 +26,13 @@ Below is a tabular breakdown of the various techniques that is used to construct
 
 |Summarization Type|Technique|Explanation|
 |--|--|--|
-|Extractive|Textrank|This technique attempts to find the most significant words or phrases in a piece of text by analyzing how they're connected to each other.|
-|Extractive|BERT||
-|Extractive|Lexrank||
-|Extractive|Luhn||
-|Extractive|LSA||
-|Abstractive|BART||
-|Abstractive|T5||
+|Extractive|Textrank|Similar to Lexrank, it uses graph-based algorithms to identify key sentences based on their connectivity within the document.|
+|Extractive|BERT|_Bidirectional Encoder Representations from Transformers_; Utilizes deep learning and transformers to understand the context and semantics of words and sentences.|
+|Extractive|Lexrank|Focuses on analyzing relationships between sentences using graph-based algorithms, particularly leveraging cosine similarity.|
+|Extractive|Luhn|Based on term frequency and sentence length, it identifies key sentences by looking at the occurrence of important words.|
+|Extractive|LSA|_Latent Semantic Analysis_; Uses singular value decomposition (SVD) to analyze relationships between terms and documents in a vector space.|
+|Abstractive|BART|This technique combines auto-regressive and auto-encoder architectures for sequence-to-sequence tasks like summarization and generation.|
+|Abstractive|T5|This technique focuses on a text-to-text approach with a fill-in-the-blank pre-training objective.|
 
 ## Evaluation
 
