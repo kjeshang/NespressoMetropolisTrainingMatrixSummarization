@@ -18,7 +18,21 @@ Below is a tabular breakdown of the raw dataset.
 
 ## Text Summarization
 
+### Summarization Type & Techniques
 
+There are two methods of text summarization; extractive and abstractive. The extractive summarization method summarizes the text by choosing a subset of sentences from the text that hold the most importance. The abstractive summarization method aims to understand the core context of the text, and then construct new text based on the understanding (saxena).
+
+Below is a tabular breakdown of the various techniques that is used to construct summaries.
+
+|Summarization Type|Technique|Explanation|
+|--|--|--|
+|Extractive|Textrank|This technique attempts to find the most significant words or phrases in a piece of text by analyzing how they're connected to each other.|
+|Extractive|BERT||
+|Extractive|Lexrank||
+|Extractive|Luhn||
+|Extractive|LSA||
+|Abstractive|BART||
+|Abstractive|T5||
 
 ## Evaluation
 
@@ -50,3 +64,7 @@ In constructing the final summaries, I at times mixed and matched portions from 
 * Images &ndash; This is due to some textual content in the reference text being in an image format. Thus, the textual content was not retrieved during the "Data Extraction" phase of the project.
 
 A common aspect of constructing the final summary documents was to manually edit the generated summaries as not all of the text is accurate in terms of readability, conciseness, and grammar. There are some instances where sentences are cutoff and the gaps must be filled. The summaries were edited within markdown files using Microsoft Visual Studio Code, and then exported to PDF documents once editing was completed.
+
+## References
+
+[Text Summarization in Python using Extractive method (including end-to-end implementation](https://medium.com/analytics-vidhya/text-summarization-in-python-using-extractive-method-including-end-to-end-implementation-2688b3fd1c8c) &dash; sawan saxena (_The Medium_)
