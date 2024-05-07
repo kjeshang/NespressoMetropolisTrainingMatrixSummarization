@@ -34,6 +34,11 @@ Below is a tabular breakdown of the various techniques that is used to construct
 |Abstractive|BART|This technique combines auto-regressive and auto-encoder architectures for sequence-to-sequence tasks like summarization and generation.|
 |Abstractive|T5|This technique focuses on a text-to-text approach with a fill-in-the-blank pre-training objective.|
 
+### Summarization Implementation
+
+Below is a step-by-step breakdown of how the summarization of the extracted text took place via the aforementioned methods and techniques.
+1. 
+
 ## Evaluation
 
 ### Evaluation Metrics
@@ -69,4 +74,4 @@ A common aspect of constructing the final summary documents was to manually edit
 
 [Text Summarization in Python using Extractive method (including end-to-end implementation](https://medium.com/analytics-vidhya/text-summarization-in-python-using-extractive-method-including-end-to-end-implementation-2688b3fd1c8c) &dash; sawan saxena (_The Medium_)
 
-Online Markdown Editor = https://pandao.github.io/editor.md/en.html
+[Online Markdown Editor](https://pandao.github.io/editor.md/en.html) - Editor.md
