@@ -37,7 +37,9 @@ Below is a tabular breakdown of the various techniques that is used to construct
 ### Summarization Implementation
 
 Below is a step-by-step breakdown of how the summarization of the extracted text took place via the aforementioned methods and techniques.
-1. 
+1. Import the necessary packages and raw dataset
+2. Import training data models for _BERT_, _BART_, and _T5_
+3. 
 
 ## Evaluation
 
