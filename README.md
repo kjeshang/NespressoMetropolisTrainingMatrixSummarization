@@ -68,3 +68,5 @@ A common aspect of constructing the final summary documents was to manually edit
 ## References
 
 [Text Summarization in Python using Extractive method (including end-to-end implementation](https://medium.com/analytics-vidhya/text-summarization-in-python-using-extractive-method-including-end-to-end-implementation-2688b3fd1c8c) &dash; sawan saxena (_The Medium_)
+
+Online Markdown Editor = https://pandao.github.io/editor.md/en.html
