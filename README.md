@@ -6,7 +6,6 @@
 
 ## Table of Contents
 
-## Table of Contents
 1. [Introduction](#Introduction)
 2. [Data Extraction](#Data-Extraction)
 3. [Text Summarization](#Text-Summarization)
