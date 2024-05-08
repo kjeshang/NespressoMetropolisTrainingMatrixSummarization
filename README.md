@@ -4,6 +4,10 @@
 
 ***Please note that even though the codebase of this project may be public, however, all internal Nestle Nespresso documents & generated data are not accessible even though they were imperative to completing the project. This is because these documents & generated data are meant for internal use only.***
 
+## Introduction
+
+
+
 ## Data Extraction
 
 The first step of this project involves reading in the file path of the reference text and required Python libraries. The textual content of each section (i.e., start page to end page of given section) in the reference text page-by-page. The extracted text is saved in a Pandas dataframe and exported into an Excel workbook, which will serve as a raw dataset for future stage/s of the project.
@@ -45,11 +49,22 @@ Below is a step-by-step breakdown of how the summarization of the extracted text
 	* Define function that is used to perform extractive summarization using a given a processed text and specified summarization technique, along with some other parameters.
 	* Define function that is used to perform abstractive summarization using a given processed text and a specifified summarization technique, along with some other parameters.
 	Define function that applies the previous functions sequentially through the raw dataset, and as per the summarization method list and technique list. The function also saves the summaries to a dataframe.
-5. Apply the functions explained in the previous step, and export dataframe contained summarized data to an Excel  workbook.
+5. Apply the functions explained in the previous step, and export dataframe containing summarized data to an Excel  workbook.
+
+Below is a tabular breakdown of the summary dataset.
+
+|Column|Data Type|Description|
+|--|--|--|
+|Section|Object|Section in reference text (i.e., Employee Memo)|
+|Summarization|Object|This is either _Extractive_ or _Abstractive_ summarization method.|
+|Technique|Object|Summarization technique applied to generate the summary (i.e., Textrank, LSA, T5, etc.)|
+|Summarized Text|Object|Text after summarization technique is applied.|
 
 ## Evaluation
 
 ### Evaluation Metrics
+
+Below is a tabular breakdown of the evaluation metrics used to determine whether a summary was optimal or not. In a sense, the metrics below are basically making a comparison between the summary text and reference text.
 
 |Metric|Description|
 |--|--|
@@ -57,7 +72,63 @@ Below is a step-by-step breakdown of how the summarization of the extracted text
 |BERTScore|This metric measures the similarity between sentences on a semantic level. Specifically, it can handle ambiguity problems of words, synonyms, and antonyms. Therefore, it is excellent for evaluating the overall quality of summaries.|
 |Meteor|This metric was designed to accomodate for translation or summarization errors, which includes word order problems, synonyms and ambiguities, and fluency of text.|
 
-Despite evaluation metrics being utilized to assess and compare the quality and accuracy of the summarizations, it was not representative of the desired intent of the project which was to create a simple, short, and concise summary of what was discussed in the Employee Memo. Therefore, manually scanning each summary based on summarization technique and crosschecking the summary to the reference text (i.e., Employee Memo) was far more logical in determining an optimal summary.
+The range for the Rouge F1 Score, BERT F1 Scores, and METEOR Score is between 0 and 1. The closer the score is to 1, the more similar the summarized text is to the reference text.
+
+### Evaluation Implementation
+
+Below is a step-by-step breakdown of how all of the generated summaries were evaluated.
+1. Import the necessary packages, as well as the raw dataset & summary dataset.
+2.  Instantiate any constant variables necessary.
+3.  Define constant functions that will be applied repetitively.
+	* Define function that calculates Rouge score based on given raw text and summary text, and then returns a dataframe showing scores.
+	Define function that calculates BERT score based on given raw text and summary text, and then returns a dataframe showing scores.
+	Define function that calculates METEOR score based on given raw text and summary text, and then returns a dataframe showing scores.
+	Define function that applies all of the aforementioned functions sequentially based on given raw data, summary data, and selected evaluation metric. The function also saves the summaries to a dataframe.
+4. Apply the functions explained in the previous step. Export dataframe containing evaluated data to an Excel workbook, whereby each sheet is dedicated to a specific evaluation metric. 
+
+Below is a tabular breakdown for the Rouge sheet in the evaluated dataset.
+
+|Column|Data Type|
+|--|--|
+|Section|Object|
+|Summarization|Object|
+|Technique|Object|
+|Summarized Text|Object|
+|rouge-1 Recall|Float|
+|rouge-1 Precision|Float|
+|rouge-1 F1 Score|Float|
+|rouge-2 Recall|Float|
+|rouge-2 Precision|Float|
+|rouge-2 F1 Score|Float|
+|rouge-l Recall|Float|
+|rouge-l Precision|Float|
+|rouge-l F1 Score|Float|
+
+Below is a tabular breakdown for the BERT sheet in the evaluated dataset.
+
+|Column|Data Type|
+|--|--|
+|Section|Object|
+|Summarization|Object|
+|Technique|Object|
+|Summarized Text|Object|
+|BERT Recall|Float|
+|BERT Precision|Float|
+|BERT F1 Score|Float|
+
+Below is a tabular breakdown for the METEOR sheet in the evaluated dataset.
+
+|Column|Data Type|
+|--|--|
+|Section|Object|
+|Summarization|Object|
+|Technique|Object|
+|Summarized Text|Object|
+|METEOR Score|Float|
+
+### Takeaway
+
+Despite evaluation metrics being utilized to assess and compare the quality and accuracy of the summarizations, it was not representative of the desired intent of the project which was to create a simple, short, and concise summary of what was discussed in the Employee Memo. Therefore, manually scanning each summary based on summarization technique and crosschecking the summary to the reference text (i.e., Employee Memo) was far more logical in determining an optimal summary.  
 
 ## Next Steps
 
@@ -80,6 +151,8 @@ A common aspect of constructing the final summary documents was to manually edit
 
 ## References
 
-[Text Summarization in Python using Extractive method (including end-to-end implementation](https://medium.com/analytics-vidhya/text-summarization-in-python-using-extractive-method-including-end-to-end-implementation-2688b3fd1c8c) &dash; sawan saxena (_The Medium_)
+[Text Summarization in Python using Extractive method (including end-to-end implementation)](https://medium.com/analytics-vidhya/text-summarization-in-python-using-extractive-method-including-end-to-end-implementation-2688b3fd1c8c) &dash; sawan saxena (_The Medium_)
+
+[Metrics for evaluating summarization of texts performed by Transformers: how to evaluate the quality of summaries](https://fabianofalcao.medium.com/metrics-for-evaluating-summarization-of-texts-performed-by-transformers-how-to-evaluate-the-b3ce68a309c3) &dash; Fabiano Falcão (_The Medium_)
 
 [Online Markdown Editor](https://pandao.github.io/editor.md/en.html) - Editor.md
