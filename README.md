@@ -4,15 +4,28 @@
 
 ***Please note that even though the codebase of this project may be public, however, all internal Nestle Nespresso documents & generated data are not accessible even though they were imperative to completing the project. This is because these documents & generated data are meant for internal use only.***
 
+## Table of Contents
+
+## Table of Contents
+1. [Introduction](#Introduction)
+2. [Data Extraction](#Data-Extraction)
+3. [Text Summarization](#Text-Summarization)
+4. [Evaluation](#Evaluation)
+5. [Next Steps](#Next-Steps)
+6. [References](#References)
+
 ## Introduction
 
+As the Total Quality Management (TQM) Team Leader, it is my job to emphasize health and safety to the rest of the staff, as well as find alignment with Nestle's health & safety guidelines with daily operations. Adherence to some of these guidelines and related tasks is paramount to be a successful in the eyes of the corporate team. One of these tasks involve receiving annual training regarding security, health, safety, and sustainability.  Historically, this training involved employees reading an Employee Memo document, which is long in length. The Employee Memo document contains multiple sections. After reading the document, the employee would then have to take a quiz.
 
+It came to light that after explaining that training would have to be conducted this year, some members of staff were not keen to read so many pages in quick succession. Furthermore, reading many pages of text over a longer duration is detrimental to knowlegde retention. Thus, I opted create a project that aims to summarize the important aspects from each section of the Employee memo document (i.e., reference text). The best way to make this project idea become a reality was to utilize Python programming, along with machine learning & natural language processing libraries.
 
 ## Data Extraction
 
 The first step of this project involves reading in the file path of the reference text and required Python libraries. The textual content of each section (i.e., start page to end page of given section) in the reference text page-by-page. The extracted text is saved in a Pandas dataframe and exported into an Excel workbook, which will serve as a raw dataset for future stage/s of the project.
 
 Below is a tabular breakdown of the raw dataset.
+
 |Column|Data Type|Description|
 |--|--|--|
 |Section|Object|Section in reference text (i.e., Employee Memo)|
