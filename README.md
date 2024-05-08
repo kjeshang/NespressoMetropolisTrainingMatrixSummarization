@@ -38,8 +38,14 @@ Below is a tabular breakdown of the various techniques that is used to construct
 
 Below is a step-by-step breakdown of how the summarization of the extracted text took place via the aforementioned methods and techniques.
 1. Import the necessary packages and raw dataset
-2. Import training data models for _BERT_, _BART_, and _T5_
-3. 
+2. Import training data models for _BERT_, _BART_, and _T5_, which are considered constant variables.
+3. Instantiate other constant variables that consists of lists containing summarization methods and techniques.
+4. Define constant functions that will be applied reptitively.
+	* Define function that processes the given extracted text that removes redundant words that exist prevelantly in the reference text, and accomodates for new line spaces if specified.
+	* Define function that is used to perform extractive summarization using a given a processed text and specified summarization technique, along with some other parameters.
+	* Define function that is used to perform abstractive summarization using a given processed text and a specifified summarization technique, along with some other parameters.
+	Define function that applies the previous functions sequentially through the raw dataset, and as per the summarization method list and technique list. The function also saves the summaries to a dataframe.
+5. Apply the functions explained in the previous step, and export dataframe contained summarized data to an Excel  workbook.
 
 ## Evaluation
 
