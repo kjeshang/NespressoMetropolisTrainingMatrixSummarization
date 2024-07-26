@@ -1,6 +1,6 @@
 # NespressoMetropolisTrainingMatrixSummarization
 
-> Kunal Jeshang, Total Quality Management Team Leader _(Project Timeline: April 2024 - May 2024)_
+> Kunal Jeshang, Total Quality Management Team Leader _(Project Timeline: April 2024 - July 2024)_
 
 ***Please note that even though the codebase of this project may be public, however, all internal Nestle Nespresso documents & generated data are not accessible even though they were imperative to completing the project. This is because these documents & generated data are meant for internal use only.***
 
@@ -160,6 +160,9 @@ In constructing the final summaries, I at times mixed and matched portions from 
 * Images &ndash; This is due to some textual content in the reference text being in an image format. Thus, the textual content was not retrieved during the "Data Extraction" phase of the project.
 
 A common aspect of constructing the final summary documents was to manually edit the generated summaries as not all of the text is accurate in terms of readability, conciseness, and grammar. There are some instances where sentences are cutoff and the gaps must be filled. The summaries were edited within markdown files using Microsoft Visual Studio Code, and then exported to PDF documents once editing was completed.
+
+### Results
+
 
 ## References
 
