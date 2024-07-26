@@ -57,10 +57,10 @@ Below is a step-by-step breakdown of how the summarization of the extracted text
 2. Import training data models for _BERT_, _BART_, and _T5_, which are considered constant variables.
 3. Instantiate other constant variables that consists of lists containing summarization methods and techniques.
 4. Define constant functions that will be applied reptitively.
-	* Define function that processes the given extracted text that removes redundant words that exist prevelantly in the reference text, and accomodates for new line spaces if specified.
-	* Define function that is used to perform extractive summarization using a given a processed text and specified summarization technique, along with some other parameters.
-	* Define function that is used to perform abstractive summarization using a given processed text and a specifified summarization technique, along with some other parameters.
-	Define function that applies the previous functions sequentially through the raw dataset, and as per the summarization method list and technique list. The function also saves the summaries to a dataframe.
+    * Define function that processes the given extracted text that removes redundant words that exist prevelantly in the reference text, and accomodates for new line spaces if specified.
+    * Define function that is used to perform extractive summarization using a given a processed text and specified summarization technique, along with some other parameters.
+    * Define function that is used to perform abstractive summarization using a given processed text and a specifified summarization technique, along with some other parameters.
+    Define function that applies the previous functions sequentially through the raw dataset, and as per the summarization method list and technique list. The function also saves the summaries to a dataframe.
 5. Apply the functions explained in the previous step, and export dataframe containing summarized data to an Excel  workbook.
 
 Below is a tabular breakdown of the summary dataset.
@@ -92,10 +92,10 @@ Below is a step-by-step breakdown of how all of the generated summaries were eva
 1. Import the necessary packages, as well as the raw dataset & summary dataset.
 2.  Instantiate any constant variables necessary.
 3.  Define constant functions that will be applied repetitively.
-	* Define function that calculates Rouge score based on given raw text and summary text, and then returns a dataframe showing scores.
-	Define function that calculates BERT score based on given raw text and summary text, and then returns a dataframe showing scores.
-	Define function that calculates METEOR score based on given raw text and summary text, and then returns a dataframe showing scores.
-	Define function that applies all of the aforementioned functions sequentially based on given raw data, summary data, and selected evaluation metric. The function also saves the summaries to a dataframe.
+    * Define function that calculates Rouge score based on given raw text and summary text, and then returns a dataframe showing scores.
+    Define function that calculates BERT score based on given raw text and summary text, and then returns a dataframe showing scores.
+    Define function that calculates METEOR score based on given raw text and summary text, and then returns a dataframe showing scores.
+    Define function that applies all of the aforementioned functions sequentially based on given raw data, summary data, and selected evaluation metric. The function also saves the summaries to a dataframe.
 4. Apply the functions explained in the previous step. Export dataframe containing evaluated data to an Excel workbook, whereby each sheet is dedicated to a specific evaluation metric. 
 
 Below is a tabular breakdown for the Rouge sheet in the evaluated dataset.
